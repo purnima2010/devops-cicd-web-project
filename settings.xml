@@ -1,0 +1,31 @@
+<settings>
+<servers>
+  <server>
+    <id>devops-cicd-devops-cicd-purnima</id>
+    <username>aws</username>
+    <password>${env.CODEARTIFACT_AUTH_TOKEN}</password>
+  </server>
+</servers>
+<profiles>
+  <profile>
+    <id>devops-cicd-devops-cicd-purnima</id>
+    <activation>
+      <activeByDefault>true</activeByDefault>
+    </activation>
+    <repositories>
+      <repository>
+        <id>devops-cicd-devops-cicd-purnima</id>
+        <url>https://devops-cicd-216989138834.d.codeartifact.us-east-1.amazonaws.com/maven/devops-cicd-purnima/</url>
+      </repository>
+    </repositories>
+  </profile>
+</profiles>
+<mirrors>
+  <mirror>
+    <id>devops-cicd-devops-cicd-purnima</id>
+    <name>devops-cicd-devops-cicd-purnima</name>
+    <url>https://devops-cicd-216989138834.d.codeartifact.us-east-1.amazonaws.com/maven/devops-cicd-purnima/</url>
+    <mirrorOf>*</mirrorOf>
+  </mirror>
+</mirrors>
+</settings>
